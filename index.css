@@ -3,15 +3,19 @@
     font-family: Cursed Timer;
 }
 
+#scoreboard-layout {
+    background: #0a2342;
+    width: 660px;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
 #pts-interface {
     display: flex;
     /* flex-direction: row; */
     justify-content: space-evenly;
-    background: #0a2342;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 660px;
-    margin: 40px auto 0px auto;
+    /* width: 660px; */
+    /* margin: 40px auto 0px auto; */
     padding: 40px 0px;
 }
 
@@ -73,10 +77,9 @@
 }
 
 #period-interface {
-    width: 660px;
-    margin: 0px auto;
+    /* width: 660px; */
+    /* margin: 0px auto; */
     padding-bottom: 40px;
-    background: #0a2342;
 }
 
 #period-title {
@@ -124,13 +127,10 @@ button:not(#reset-btn):hover {
 }
 
 #reset-section {
-    width: 660px;
-    margin: 0px auto;
+    /* width: 660px; */
+    /* margin: 0px auto; */
     padding-bottom: 40px;
-    background: #0a2342;
     text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 #reset-btn {

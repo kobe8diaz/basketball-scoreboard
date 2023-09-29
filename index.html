@@ -6,38 +6,40 @@
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="pts-interface">
-            <div id="home-section">
-                <h1 id="home-title">HOME</h1>
-                <p id="home-pts">0</p>
-                <div id="home-pts-btns">
-                    <button class="pts-btn" onclick="homePlus1(); saveMementoHome();">+1</button>
-                    <button class="pts-btn" onclick="homePlus2(); saveMementoHome();">+2</button>
-                    <button class="pts-btn" onclick="homePlus3(); saveMementoHome();">+3</button>
+        <div id="scoreboard-layout">
+            <div id="pts-interface">
+                <div id="home-section">
+                    <h1 id="home-title">HOME</h1>
+                    <p id="home-pts">0</p>
+                    <div id="home-pts-btns">
+                        <button class="pts-btn" onclick="homePlus1(); saveMementoHome();">+1</button>
+                        <button class="pts-btn" onclick="homePlus2(); saveMementoHome();">+2</button>
+                        <button class="pts-btn" onclick="homePlus3(); saveMementoHome();">+3</button>
+                    </div>
+                    <button class="undo-btn" onclick="undoHome()">UNDO</button>
                 </div>
-                <button class="undo-btn" onclick="undoHome()">UNDO</button>
-            </div>
-            <div id="away-section">
-                <h1 id="away-title">AWAY</h1>
-                <p id="away-pts">0</p>
-                <div id="away-pts-btns">
-                    <button class="pts-btn" onclick="awayPlus1(); saveMementoAway();">+1</button>
-                    <button class="pts-btn" onclick="awayPlus2(); saveMementoAway();">+2</button>
-                    <button class="pts-btn" onclick="awayPlus3(); saveMementoAway();">+3</button>
+                <div id="away-section">
+                    <h1 id="away-title">AWAY</h1>
+                    <p id="away-pts">0</p>
+                    <div id="away-pts-btns">
+                        <button class="pts-btn" onclick="awayPlus1(); saveMementoAway();">+1</button>
+                        <button class="pts-btn" onclick="awayPlus2(); saveMementoAway();">+2</button>
+                        <button class="pts-btn" onclick="awayPlus3(); saveMementoAway();">+3</button>
+                    </div>
+                    <button class="undo-btn" onclick="undoAway()">UNDO</button>
                 </div>
-                <button class="undo-btn" onclick="undoAway()">UNDO</button>
             </div>
-        </div>
-        <div id="period-interface">
-            <h1 id="period-title">PERIOD</h1>
-            <div id="btn-period-btn">
-                <button class="arrow-btn" onclick="leftArrow()"><</button>
-                <p id="period-number">1</p>
-                <button class="arrow-btn" onclick="rightArrow()">></button>
+            <div id="period-interface">
+                <h1 id="period-title">PERIOD</h1>
+                <div id="btn-period-btn">
+                    <button class="arrow-btn" onclick="leftArrow()"><</button>
+                    <p id="period-number">1</p>
+                    <button class="arrow-btn" onclick="rightArrow()">></button>
+                </div>
             </div>
-        </div>
-        <div id="reset-section">
-            <button id="reset-btn" onclick="reset()">RESET GAME</button>
+            <div id="reset-section">
+                <button id="reset-btn" onclick="reset()">RESET GAME</button>
+            </div>
         </div>
         <script src="index.js"></script>
     </body>
